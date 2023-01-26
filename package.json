@@ -12,7 +12,9 @@
 		"format": "prettier --write",
 		"prepare": "husky install"
 	},
-  "eslintIgnore" : ["**/*.scss"],
+  "eslintConfig": {
+    "extends": ["stylelint"]
+  },
 	"lint-staged": {
 		"src/*/**": [
 			"npm run format",
